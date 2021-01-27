@@ -42,5 +42,3 @@ class map:
         self.createmap([39.538, -97.251], 5)
         self.pull_from_db(self)
         self.m.save("./data/index.html")
-
-map()
