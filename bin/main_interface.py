@@ -1,6 +1,6 @@
 from tkinter import *
 import station_generation as st
-import map_generation as Map
+import map_generation
 import time
 
 
@@ -85,7 +85,8 @@ class GUI:
             action_menu['text'] = (str(st.generate_table(st.pull_info(country + network))) + " stations added to database." )
 
         def open_map():
-            Map.main()
+            map_generation.map()
+            map_generation.map.open()
 
         def help_interface():
             print("tmp help")
